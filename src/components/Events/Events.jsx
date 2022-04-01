@@ -10,6 +10,12 @@ const Events = () => {
       <Content style={{ padding: '0 87px' }}>
         <div className="site-layout-content">
           <h1 className="title">События</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis mollitia incidunt placeat saepe reprehenderit.
+            Similique rerum repellat, unde vero porro, atque magnam quia fugit
+            ad esse nostrum. Nihil, veniam architecto.
+          </p>
         </div>
       </Content>
     </Layout>
