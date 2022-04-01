@@ -8,3 +8,19 @@
   text-align: center;
   font-size: 35px;
 }
+
+.component_text {
+  font-size: 20px;
+}
+
+.code {
+  background-color: #141414;
+  color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.code pre {
+  margin: 0;
+}

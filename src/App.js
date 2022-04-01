@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Components from './components/Components/Components';
 import Props from './components/Props/Props';
@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
         <Route path="/components" element={<Components />} />
         <Route path="/props" element={<Props />} />
         <Route path="/state" element={<State />} />
@@ -39,6 +39,7 @@ function App() {
         <Route path="/router" element={<Router />} />
         <Route path="/context" element={<Context />} />
         <Route path="/form" element={<Form />} />
+        <Route path="*" element={<Navigate replace to="/home" />} />
       </Routes>
       <Footer />
     </div>
