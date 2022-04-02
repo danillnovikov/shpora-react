@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Components from './components/Components/Components';
 import Props from './components/Props/Props';
@@ -17,6 +17,7 @@ import Effect from './components/useEffect/Effect';
 import Router from './components/Router/Router';
 import Context from './components/Context/Context';
 import Form from './components/Form/Form';
+import Notfound from './components/NotFound/Notfound';
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
         <Route path="/router" element={<Router />} />
         <Route path="/context" element={<Context />} />
         <Route path="/form" element={<Form />} />
-        <Route path="*" element={<Navigate replace to="/home" />} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
     </div>
