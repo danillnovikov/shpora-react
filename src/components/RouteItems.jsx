@@ -19,7 +19,7 @@ import { Navigate } from 'react-router-dom';
 
 export const RouteItems = [
   {
-    path: '/',
+    path: '/home',
     element: <Home />,
   },
   {
