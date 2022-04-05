@@ -18,76 +18,33 @@ import Form from './Form/Form';
 import { Navigate } from 'react-router-dom';
 
 export const RouteItems = [
+  { id: 1, path: 'home', element: <Home /> },
   {
-    path: '/home',
-    element: <Home />,
-  },
-  {
+    id: 2,
     path: 'components',
     element: <Components />,
   },
   {
+    id: 3,
     path: 'props',
     element: <Props />,
   },
+  { id: 4, path: 'state', element: <State /> },
+  { id: 5, path: 'lifecycle', element: <Lifecycle /> },
   {
-    path: 'state',
-    element: <State />,
-  },
-  {
-    path: 'lifecycle',
-    element: <Lifecycle />,
-  },
-  {
+    id: 6,
     path: 'events',
     element: <Events />,
   },
-  {
-    path: 'key',
-    element: <Key />,
-  },
-  {
-    path: 'refs',
-    element: <Refs />,
-  },
-  {
-    path: 'async',
-    element: <Async />,
-  },
-  {
-    path: 'v-dom',
-    element: <VirtualDOM />,
-  },
-  {
-    path: 'v-dom',
-    element: <VirtualDOM />,
-  },
-  {
-    path: 'fragment',
-    element: <Fragment />,
-  },
-  {
-    path: 'memo',
-    element: <Memo />,
-  },
-  {
-    path: 'useeffect',
-    element: <Effect />,
-  },
-  {
-    path: 'router',
-    element: <Router />,
-  },
-  {
-    path: 'context',
-    element: <Context />,
-  },
-  {
-    path: 'form',
-    element: <Form />,
-  },
-  {
-    path: '*',
-    element: <Navigate replace to="/home" />,
-  },
+  { id: 7, path: 'key', element: <Key /> },
+  { id: 8, path: 'refs', element: <Refs /> },
+  { id: 9, path: 'async', element: <Async /> },
+  { id: 10, path: 'v-dom', element: <VirtualDOM /> },
+  { id: 11, path: 'fragment', element: <Fragment /> },
+  { id: 12, path: 'memo', element: <Memo /> },
+  { id: 13, path: 'useeffect', element: <Effect /> },
+  { id: 14, path: 'router', element: <Router /> },
+  { id: 15, path: 'context', element: <Context /> },
+  { id: 16, path: 'form', element: <Form /> },
+  { id: 17, path: '*', element: <Navigate replace to="/home" /> },
 ];

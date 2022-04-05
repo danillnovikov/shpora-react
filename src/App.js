@@ -6,10 +6,12 @@ import { RouteItems } from './components/RouteItems';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar routes={RouteItems} />
       <Routes>
-        {RouteItems.map((item, index) => {
-          return <Route key={index} path={item.path} element={item.element} />;
+        {RouteItems.map((item) => {
+          return (
+            <Route key={item.id} path={item.path} element={item.element} />
+          );
         })}
       </Routes>
       <Footer />
