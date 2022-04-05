@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout } from 'antd';
-import './State.css';
 
 const { Content } = Layout;
 
@@ -10,7 +9,9 @@ const State = () => {
       <Content style={{ padding: '0 87px' }}>
         <div className="site-layout-content">
           <h1 className="title">State</h1>
-          <h2 className="subtitle">Добавим внутреннее состояние в класс</h2>
+          <h2 className="subtitle" style={{ textAlign: 'left' }}>
+            Добавим внутреннее состояние в класс
+          </h2>
           <p className="component_text">
             Переместим date из пропсов в состояние в три этапа:
           </p>

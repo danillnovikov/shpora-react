@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import './Events.css';
+// import './Events.css';
 
 const { Content } = Layout;
 

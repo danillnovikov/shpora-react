@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout } from 'antd';
-import './Form.css';
 
 const { Content } = Layout;
 

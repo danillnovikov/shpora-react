@@ -28,7 +28,7 @@ const Lifecycle = () => {
             При создании экземпляра компонента и его вставке в DOM, следующие
             методы вызываются в установленном порядке:
           </p>
-          <ul>
+          <ul className="component_text">
             <li>{`constructor()`}</li>
             <li>{`static getDerivedStateFromProps()`}</li>
             <li>{`render()`}</li>
@@ -46,7 +46,7 @@ const Lifecycle = () => {
             методы вызываются в установленном порядке при повторном рендере
             компонента:
           </p>
-          <ul>
+          <ul className="component_text">
             <li>{`static getDerivedStateFromProps()`}</li>
             <li>{`static getDerivedStateFromProps()`}</li>
             <li>{`render()`}</li>
@@ -64,7 +64,7 @@ const Lifecycle = () => {
           <p className="component_text">
             Этот метод вызывается при удалении компонента из DOM:
           </p>
-          <ul>
+          <ul className="component_text">
             <li>{`componentWillUnmount()`}</li>
           </ul>
           <h3 className="sub_title">Обработка ошибок</h3>
@@ -73,7 +73,7 @@ const Lifecycle = () => {
             рендеринга, методе жизненного цикла или конструкторе любого
             дочернего компонента.
           </p>
-          <ul>
+          <ul className="component_text">
             <li>{`static getDerivedStateFromError()`}</li>
             <li>{`componentDidCatch()`}</li>
           </ul>

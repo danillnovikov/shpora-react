@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import './VirtualDOM.css';
+// import './VirtualDOM.css';
 
 const { Content } = Layout;
 
