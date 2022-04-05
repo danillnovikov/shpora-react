@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/shpora-react/static/css/main.bc62c7f7.css",
-    "main.js": "/shpora-react/static/js/main.7643827e.js",
+    "main.css": "/shpora-react/static/css/main.291c2f29.css",
+    "main.js": "/shpora-react/static/js/main.16b35947.js",
     "static/media/react.jpeg": "/shpora-react/static/media/react.2b8fea9d5945941ec638.jpeg",
     "index.html": "/shpora-react/index.html",
-    "main.bc62c7f7.css.map": "/shpora-react/static/css/main.bc62c7f7.css.map",
-    "main.7643827e.js.map": "/shpora-react/static/js/main.7643827e.js.map"
+    "main.291c2f29.css.map": "/shpora-react/static/css/main.291c2f29.css.map",
+    "main.16b35947.js.map": "/shpora-react/static/js/main.16b35947.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc62c7f7.css",
-    "static/js/main.7643827e.js"
+    "static/css/main.291c2f29.css",
+    "static/js/main.16b35947.js"
   ]
 }
