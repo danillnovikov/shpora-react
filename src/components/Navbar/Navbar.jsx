@@ -3,14 +3,13 @@ import { MenuItems } from '../MenuItems';
 import logo from './logo.png';
 import { Layout, Menu } from 'antd';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
 
 const Navbar = ({ routes }) => {
   const [, pathname] = window.location.pathname.split('/');
-  const currentRoute = routes.find((route) => route.path === pathname);
-  console.log(currentRoute);
+  const currentRoute = routes.filter((route) => route.path === pathname);
 
   return (
     <Layout className="layout">
@@ -23,7 +22,7 @@ const Navbar = ({ routes }) => {
         >
           {MenuItems.map((item) => (
             <Menu.Item key={item.id}>
-              <NavLink to={item.url}>{item.title}</NavLink>
+              <Link to={item.url}>{item.title}</Link>
             </Menu.Item>
           ))}
         </Menu>
