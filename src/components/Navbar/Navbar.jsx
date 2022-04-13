@@ -9,7 +9,8 @@ const { Header } = Layout;
 
 const Navbar = ({ routes }) => {
   const [, pathname] = window.location.pathname.split('/');
-  const currentRoute = routes.filter((route) => route.path === pathname);
+  const currentRoute = routes.find((route) => route.path === pathname);
+  console.log(currentRoute);
 
   return (
     <Layout className="layout">
@@ -18,7 +19,7 @@ const Navbar = ({ routes }) => {
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={[`${currentRoute.id}`]}
+          defaultSelectedKeys={[currentRoute?.id]}
         >
           {MenuItems.map((item) => (
             <Menu.Item key={item.id}>

@@ -5,7 +5,7 @@ import { RouteItems } from './components/RouteItems';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar routes={RouteItems} />
       <Routes>
         {RouteItems.map((item) => {
@@ -15,7 +15,7 @@ function App() {
         })}
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 
